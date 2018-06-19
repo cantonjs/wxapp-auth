@@ -15,7 +15,7 @@
     "precoveralls": "yarn test --coverage",
 		"coveralls": "cat ./coverage/lcov.info | coveralls",
 		"prebuild": "rimraf lib node4",
-		"build:node4": "cross-env BABEL_ENV=generator babel src -d node4",
+		"build:node4": "cross-env BABEL_ENV=node4 babel src -d node4",
 		"build:async": "babel src -d lib",
 		"build": "run-p build:*",
 		"preversion": "yarn test && yarn build"

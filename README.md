@@ -10,12 +10,12 @@ Wechat mini program auth helper for Node.js.
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-- [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Reference](#reference)
-  - [koaWechatMiniProgramAuth(config)](#koawechatminiprogramauthconfig)
-  - [wechatMiniProgram](#wechatminiprogram)
+  - [constructor(appId, appSecret)](#constructorappid-appsecret)
+  - [getUserInfo(params)](#getuserinfoparams)
+  - [getSession(params)](#getsessionparams)
 - [License](#license)
 
 ## Installation
@@ -45,16 +45,24 @@ import WechatMiniProgramAuth from 'wechat-mini-program-auth';
 
 ## Reference
 
-### WechatMiniProgramAuth#constructor(appId, appSecret)
+### constructor(appId, appSecret)
 
-Create a [wechat mini program auth](#wechatminiprogram) instance.
+```js
+new WechatMiniProgramAuth(appId, appSecret)
+```
+
+Create a `WechatMiniProgramAuth` instance.
 
 #### Arguments
 
 1. `appId` \<String\>: Wechat app id, required
 2. `appSecret` \<String\>: Wechat app secret, required
 
-### WechatMiniProgramAuth#getUserInfo(params)
+### getUserInfo(params)
+
+```js
+wechatMiniProgramAuth.getUserInfo(params)
+```
 
 #### Arguments
 
@@ -76,7 +84,11 @@ Create a [wechat mini program auth](#wechatminiprogram) instance.
 
 Promise of [UserInfo](https://developers.weixin.qq.com/miniprogram/dev/api/open.html#wxgetuserinfoobject) object
 
-### WechatMiniProgramAuth#getSession(params)
+### getSession(params)
+
+```js
+wechatMiniProgramAuth.getSession(params)
+```
 
 #### Arguments
 

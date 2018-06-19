@@ -1,0 +1,16 @@
+sudo: required
+
+language: node_js
+
+services:
+  - docker
+
+node_js:
+  - 8
+  - 10
+
+after_script:
+  - yarn coveralls
+
+notifications:
+  email: false

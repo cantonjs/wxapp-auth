@@ -1,0 +1,76 @@
+{
+	"name": "wechat-mini-program-auth",
+	"description": "wechat mini program auth helper for node.js",
+	"version": "0.0.0",
+	"main": "lib/index",
+	"files": [
+		"*.md",
+		"lib"
+	],
+	"scripts": {
+		"start": "yarn test --watchAll",
+		"test": "cross-env NODE_ENV=development jest",
+		"prettier": "prettier-eslint --write \"+(src|test)/**/*.js\"",
+		"prebuild": "rimraf lib",
+		"build": "babel src -d lib",
+		"preversion": "yarn test && yarn build"
+	},
+	"author": "Cap32",
+	"repository": "cantonjs/wechat-mini-program-auth",
+	"engines": {
+		"node": ">=7.6"
+	},
+	"keywords": [
+		"nodejs",
+		"wechat",
+		"mini-program",
+		"微信小程序",
+		"小程序",
+		"session",
+		"auth",
+		"wxapp",
+		"weapp"
+	],
+	"license": "MIT",
+	"dependencies": {
+		"node-fetch": "^2.1.2"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-core": "^6.13.2",
+		"babel-eslint": "^8.2.3",
+		"babel-jest": "^23.0.1",
+		"babel-plugin-transform-es2015-destructuring": "^6.19.0",
+		"babel-plugin-transform-es2015-modules-commonjs": "^6.18.0",
+		"babel-plugin-transform-es2015-parameters": "^6.18.0",
+		"babel-plugin-transform-es2015-spread": "^6.22.0",
+		"babel-polyfill": "^6.13.0",
+		"babel-preset-stage-0": "^6.5.0",
+		"babel-preset-stage-0-without-async": "^1.0.0",
+		"babel-register": "^6.11.6",
+		"cross-env": "^4.0.0",
+		"eslint": "^4.19.1",
+		"eslint-config-cantonjs": "^0.2.0",
+		"eslint-config-standard": "^11.0.0",
+		"eslint-plugin-import": "^2.12.0",
+		"eslint-plugin-jest": "^21.17.0",
+		"eslint-plugin-node": "^6.0.1",
+		"eslint-plugin-promise": "^3.8.0",
+		"eslint-plugin-react": "^7.9.1",
+		"eslint-plugin-standard": "^3.1.0",
+		"get-port": "^3.2.0",
+		"jest": "^23.1.0",
+		"koa": "^2.5.1",
+		"prettier-eslint-cli": "^4.7.0",
+		"rimraf": "^2.5.4"
+	},
+	"jest": {
+		"collectCoverageFrom": [
+			"src/**/*.js"
+		],
+		"modulePathIgnorePatterns": [
+			"node_modules",
+			"lib"
+		]
+	}
+}

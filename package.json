@@ -1,18 +1,18 @@
 {
 	"name": "wechat-mini-program-auth",
 	"description": "wechat mini program auth helper for node.js",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"main": "index",
 	"files": [
 		"*.md",
-    "lib",
-    "node4"
+		"lib",
+		"node4"
 	],
 	"scripts": {
 		"start": "yarn test --watchAll",
 		"test": "cross-env NODE_ENV=development jest",
-    "prettier": "prettier-eslint --write \"+(src|test)/**/*.js\"",
-    "precoveralls": "yarn test --coverage",
+		"prettier": "prettier-eslint --write \"+(src|test)/**/*.js\"",
+		"precoveralls": "yarn test --coverage",
 		"coveralls": "cat ./coverage/lcov.info | coveralls",
 		"prebuild": "rimraf lib node4",
 		"build:node4": "cross-env BABEL_ENV=node4 babel src -d node4",

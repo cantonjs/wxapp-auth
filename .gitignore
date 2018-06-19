@@ -10,4 +10,5 @@ Thumbs.db
 *.log
 node_modules/
 lib/
+node4/
 coverage/

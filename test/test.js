@@ -1,4 +1,4 @@
-import WechatMiniProgramAuth from '../src';
+import WechatMiniProgramAuth from '../src/WechatMiniProgramAuth';
 import { sha1 } from '../src/utils';
 import { startServer, stopServer } from './utils';
 import {

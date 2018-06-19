@@ -2,10 +2,11 @@
 	"name": "wechat-mini-program-auth",
 	"description": "wechat mini program auth helper for node.js",
 	"version": "0.0.0",
-	"main": "lib/index",
+	"main": "index",
 	"files": [
 		"*.md",
-		"lib"
+    "lib",
+    "node4"
 	],
 	"scripts": {
 		"start": "yarn test --watchAll",
@@ -13,14 +14,16 @@
     "prettier": "prettier-eslint --write \"+(src|test)/**/*.js\"",
     "precoveralls": "yarn test --coverage",
 		"coveralls": "cat ./coverage/lcov.info | coveralls",
-		"prebuild": "rimraf lib",
-		"build": "babel src -d lib",
+		"prebuild": "rimraf lib node4",
+		"build:node4": "cross-env BABEL_ENV=generator babel src -d node4",
+		"build:async": "babel src -d lib",
+		"build": "run-p build:*",
 		"preversion": "yarn test && yarn build"
 	},
 	"author": "Cap32",
 	"repository": "cantonjs/wechat-mini-program-auth",
 	"engines": {
-		"node": ">=7.6"
+		"node": ">=4"
 	},
 	"keywords": [
 		"nodejs",
@@ -64,6 +67,7 @@
 		"get-port": "^3.2.0",
 		"jest": "^23.1.0",
 		"koa": "^2.5.1",
+		"npm-run-all": "^4.1.3",
 		"prettier-eslint-cli": "^4.7.0",
 		"rimraf": "^2.5.4"
 	},

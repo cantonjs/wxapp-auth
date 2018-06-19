@@ -70,7 +70,7 @@ wechatMiniProgramAuth.getUserInfo(params)
 1. Params \<Object\>
 
   - `code` \<String\>: `code` from wechat mini program `wx.login()`
-  - `sessionKey` \<String\>: Session key from `wechatMiniProgram.getSession()`
+  - `sessionKey` \<String\>: Session key from [getSession(params)](#getsessionparams)
   - `rawData` \<String\>: `rawData` from wechat mini program `wx.getUserInfo()`
   - `signature` \<String\>: `signature` from wechat mini program `wx.getUserInfo()`
   - `encryptedData` \<String\>: `encryptedData` from wechat mini program `wx.getUserInfo()`

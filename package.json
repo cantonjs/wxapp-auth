@@ -2,9 +2,10 @@
 	"name": "wechat-mini-program-auth",
 	"description": "wechat mini program auth helper for node.js",
 	"version": "0.1.0",
-	"main": "index",
+	"main": "index.js",
 	"files": [
 		"*.md",
+		"index.js",
 		"lib",
 		"node4"
 	],

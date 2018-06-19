@@ -10,7 +10,9 @@
 	"scripts": {
 		"start": "yarn test --watchAll",
 		"test": "cross-env NODE_ENV=development jest",
-		"prettier": "prettier-eslint --write \"+(src|test)/**/*.js\"",
+    "prettier": "prettier-eslint --write \"+(src|test)/**/*.js\"",
+    "precoveralls": "yarn test --coverage",
+		"coveralls": "cat ./coverage/lcov.info | coveralls",
 		"prebuild": "rimraf lib",
 		"build": "babel src -d lib",
 		"preversion": "yarn test && yarn build"
@@ -48,6 +50,7 @@
 		"babel-preset-stage-0": "^6.5.0",
 		"babel-preset-stage-0-without-async": "^1.0.0",
 		"babel-register": "^6.11.6",
+		"coveralls": "^3.0.1",
 		"cross-env": "^4.0.0",
 		"eslint": "^4.19.1",
 		"eslint-config-cantonjs": "^0.2.0",

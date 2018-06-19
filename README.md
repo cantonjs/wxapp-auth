@@ -2,6 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/cantonjs/wechat-mini-program-auth.svg?style=shield)](https://circleci.com/gh/cantonjs/wechat-mini-program-auth)
 [![Build Status](https://travis-ci.org/cantonjs/wechat-mini-program-auth.svg?branch=master)](https://travis-ci.org/cantonjs/wechat-mini-program-auth)
+[![Coverage Status](https://coveralls.io/repos/github/cantonjs/wechat-mini-program-auth/badge.svg?branch=master)](https://coveralls.io/github/cantonjs/wechat-mini-program-auth?branch=master)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 [![License](https://img.shields.io/badge/license-MIT_License-brightgreen.svg?style=flat)](https://github.com/cantonjs/wechat-mini-program-auth/master/LICENSE.md)
 

@@ -1,10 +1,10 @@
-# wechat-mini-program-auth
+# wxapp-auth
 
-[![CircleCI](https://circleci.com/gh/cantonjs/wechat-mini-program-auth.svg?style=shield)](https://circleci.com/gh/cantonjs/wechat-mini-program-auth)
-[![Build Status](https://travis-ci.org/cantonjs/wechat-mini-program-auth.svg?branch=master)](https://travis-ci.org/cantonjs/wechat-mini-program-auth)
-[![Coverage Status](https://coveralls.io/repos/github/cantonjs/wechat-mini-program-auth/badge.svg?branch=master)](https://coveralls.io/github/cantonjs/wechat-mini-program-auth?branch=master)
+[![CircleCI](https://circleci.com/gh/cantonjs/wxapp-auth.svg?style=shield)](https://circleci.com/gh/cantonjs/wxapp-auth)
+[![Build Status](https://travis-ci.org/cantonjs/wxapp-auth.svg?branch=master)](https://travis-ci.org/cantonjs/wxapp-auth)
+[![Coverage Status](https://coveralls.io/repos/github/cantonjs/wxapp-auth/badge.svg?branch=master)](https://coveralls.io/github/cantonjs/wxapp-auth?branch=master)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-[![License](https://img.shields.io/badge/license-MIT_License-brightgreen.svg?style=flat)](https://github.com/cantonjs/wechat-mini-program-auth/master/LICENSE.md)
+[![License](https://img.shields.io/badge/license-MIT_License-brightgreen.svg?style=flat)](https://github.com/cantonjs/wxapp-auth/master/LICENSE.md)
 
 (Non-official) Wechat mini program auth helper for Node.js.
 
@@ -22,16 +22,16 @@
 ## Installation
 
 ```bash
-yarn add wechat-mini-program-auth
+yarn add wxapp-auth
 ```
 
 ## Usage
 
 ```js
-import WechatMiniProgramAuth from 'wechat-mini-program-auth';
+import WxappAuth from 'wxapp-auth';
 
 (async function main() {
-  const wechatAuth = new WechatMiniProgramAuth({
+  const wechatAuth = new WxappAuth({
     appId: '<WECHAT_APP_ID>',
     appSecret: '<WECHAT_APP_SECRET>',
   }));
@@ -49,10 +49,10 @@ import WechatMiniProgramAuth from 'wechat-mini-program-auth';
 ### constructor(appId, appSecret)
 
 ```js
-new WechatMiniProgramAuth(appId, appSecret)
+new WxappAuth(appId, appSecret)
 ```
 
-Create a `WechatMiniProgramAuth` instance.
+Create a `WxappAuth` instance.
 
 #### Arguments
 
@@ -62,7 +62,7 @@ Create a `WechatMiniProgramAuth` instance.
 ### getUserInfo(params)
 
 ```js
-wechatMiniProgramAuth.getUserInfo(params)
+wxappAuth.getUserInfo(params)
 ```
 
 #### Arguments
@@ -88,7 +88,7 @@ Promise of [UserInfo](https://developers.weixin.qq.com/miniprogram/dev/api/open.
 ### getSession(params)
 
 ```js
-wechatMiniProgramAuth.getSession(params)
+wxappAuth.getSession(params)
 ```
 
 #### Arguments

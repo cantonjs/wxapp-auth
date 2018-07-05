@@ -8,5 +8,5 @@ catch (error) {
 }
 
 // If node does not support async await, use the compiled version.
-if (asyncawait) module.exports = require('./lib/WechatMiniProgramAuth');
-else module.exports = require('./node4/WechatMiniProgramAuth');
+if (asyncawait) module.exports = require('./lib/WxappAuth');
+else module.exports = require('./node4/WxappAuth');

@@ -2,7 +2,7 @@ import requestSession from './requestSession';
 import getUserInfo from './getUserInfo';
 import { assert } from './utils';
 
-export default class WechatMiniProgramAuth {
+export default class WxappAuth {
 	constructor(appId, appSecret, options = {}) {
 		this.appId = appId;
 		this.appSecret = appSecret;

@@ -1,5 +1,5 @@
 {
-	"name": "wechat-mini-program-auth",
+	"name": "wxapp-auth",
 	"description": "wechat mini program auth helper for node.js",
 	"version": "0.1.1",
 	"main": "index.js",

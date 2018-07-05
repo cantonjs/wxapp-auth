@@ -22,7 +22,7 @@
 		"preversion": "yarn test && yarn build"
 	},
 	"author": "Cap32",
-	"repository": "cantonjs/wechat-mini-program-auth",
+	"repository": "cantonjs/wxapp-auth",
 	"engines": {
 		"node": ">=4"
 	},

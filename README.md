@@ -6,7 +6,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 [![License](https://img.shields.io/badge/license-MIT_License-brightgreen.svg?style=flat)](https://github.com/cantonjs/wxapp-auth/master/LICENSE.md)
 
-(Non-official) Wechat mini program auth helper for Node.js.
+(Non-official) Wechat mini program (a.k.a. 微信小程序) auth helper for Node.js.
 
 ## Table of Contents
 

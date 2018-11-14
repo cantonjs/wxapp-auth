@@ -31,11 +31,7 @@ yarn add wxapp-auth
 import WxappAuth from 'wxapp-auth';
 
 (async function main() {
-  const wechatAuth = new WxappAuth({
-    appId: '<WECHAT_APP_ID>',
-    appSecret: '<WECHAT_APP_SECRET>',
-  }));
-
+  const wechatAuth = new WxappAuth('<APP_ID>', '<APP_SECRET>');
   const userInfo = await wechatAuth.getUserInfo({
     code: '<LOGIN_CODE>'
     rawData: '<RAW_DATA>',
@@ -49,7 +45,7 @@ import WxappAuth from 'wxapp-auth';
 ### constructor(appId, appSecret)
 
 ```js
-new WxappAuth(appId, appSecret)
+new WxappAuth(appId, appSecret);
 ```
 
 Create a `WxappAuth` instance.
@@ -62,19 +58,19 @@ Create a `WxappAuth` instance.
 ### getUserInfo(params)
 
 ```js
-wxappAuth.getUserInfo(params)
+wxappAuth.getUserInfo(params);
 ```
 
 #### Arguments
 
 1. Params \<Object\>
 
-  - `code` \<String\>: `code` from wechat mini program `wx.login()`
-  - `sessionKey` \<String\>: Session key from [getSession(params)](#getsessionparams)
-  - `rawData` \<String\>: `rawData` from wechat mini program `wx.getUserInfo()`
-  - `signature` \<String\>: `signature` from wechat mini program `wx.getUserInfo()`
-  - `encryptedData` \<String\>: `encryptedData` from wechat mini program `wx.getUserInfo()`
-  - `iv` \<String\>: `iv` from wechat mini program `wx.getUserInfo()`
+- `code` \<String\>: `code` from wechat mini program `wx.login()`
+- `sessionKey` \<String\>: Session key from [getSession(params)](#getsessionparams)
+- `rawData` \<String\>: `rawData` from wechat mini program `wx.getUserInfo()`
+- `signature` \<String\>: `signature` from wechat mini program `wx.getUserInfo()`
+- `encryptedData` \<String\>: `encryptedData` from wechat mini program `wx.getUserInfo()`
+- `iv` \<String\>: `iv` from wechat mini program `wx.getUserInfo()`
 
 ##### Note
 
@@ -88,14 +84,14 @@ Promise of [UserInfo](https://developers.weixin.qq.com/miniprogram/dev/api/open.
 ### getSession(params)
 
 ```js
-wxappAuth.getSession(params)
+wxappAuth.getSession(params);
 ```
 
 #### Arguments
 
 1. Params \<Object\>
 
-  - `code` \<String\>: `code` from wechat mini program `wx.login()`, required
+- `code` \<String\>: `code` from wechat mini program `wx.login()`, required
 
 ##### Returns
 
